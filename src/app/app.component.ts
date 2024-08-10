@@ -1,10 +1,21 @@
 import { Component } from '@angular/core';
+import { MatIcon } from '@angular/material/icon';
+import { MatTab, MatTabGroup } from '@angular/material/tabs';
+import { MatToolbar } from '@angular/material/toolbar';
 import { RouterOutlet } from '@angular/router';
+import { PdfViewerComponent } from './pdf-viewer/pdf-viewer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [
+    RouterOutlet,
+    MatToolbar,
+    MatIcon,
+    MatTabGroup,
+    MatTab,
+    PdfViewerComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
